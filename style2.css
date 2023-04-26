@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #10103b;
+  --light-grey: #e5e4e2;
+  --off-white: #f9f8f6;
+  --golden-yellow: #fecc4c;
+  --yellow: #ffcc4c;
+  --gold: #feac32;
+  --orange: #ffac33;
+  --dark-orange: #f89808;
+  --black: #000;
+}
+
+body {
+   background-image: linear-gradient(#000000,#3cdfff, #8aefff, #9DD9F3, #9DCF94);
+    text-align: center;
+    font-size: 2vw;
+    margin: auto;
+    width:90%;
+    background-size: 400% 400%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.responsive {
+  width: 15%;
+  height: auto;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+.submit {color: #191970}
+
+h1{
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 6vw;
+    color: #50c878	
+}
+.neonText4 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #50c878,
+      0 0 82px #50c878,
+      0 0 92px #50c878,
+      0 0 102px #50c878,
+      0 0 151px #50c878;
+}
+.selections-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 800px;
+  background-image: linear-gradient(#1dd1b6, #9DCF94);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dropdown {
+  margin: 10px auto 20px;
+  width: 200px;
+} 
+
+.dropdown-text {
+  text-align: center;
+}
+#madlib-text {
+  color:#191970;
+  font-size: 5vw;
+  text-align: center;
+}
+h6{
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    color:#AA0022
+}
+h3{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3vw;
+    text-align: center;
+    color: #c175ff
+}
+.neonText3 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #EE2625,
+      0 0 82px #EE2625,
+      0 0 92px #EE2625,
+      0 0 102px #EE2625,
+      0 0 151px #EE2625;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mad Libs</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans:wght@600&family=Sacramento&display=swap"    rel="stylesheet">
+    </head>
+    <body>
+    <div class="container">
+    <h1 class="neonText">Day In The Life of You</h1>
+    <div class="container">
+    <h5 class="neonText2">First, before we fill out the mad lib, tell us about yourself in a short form below.</h5>
+   <h3>
+   <form id="myForm">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+ 
+  <label for= "describe">What's your ideal day like?</label><br>
+  <textarea rows="4" cols= "30" id="describe" name="describe"></textarea><br><br>
+ 
+  <label for="wakeUp">Wake up:</label><br>
+  <select id= "wakeUp">
+      <option value= "6am">6am</option>
+      <option value= "8am">8am</option>
+      <option value= "10am">10am</option>
+      <option value= "noon">noon</option>
+  </select> <br></br>
+  <p>What's the first thing you do after waking up?</p>
+  <input type= "radio" id="getready" name="chooseoption" value="HTML">
+  <label for="getready">Get Ready</label>
+  <input type="radio" id="scrollonsocialmedia" name="chooseoption" value= "HTML">
+  <label for="scrollonsocialmedia">Scroll on social media</label> 
+ <br></br>
+  <br>What would you do for the day?<br>
+    <input type="checkbox" id="goOutside" name="goOutside" value= "goOutside">
+    <label for= "goOutside">Go Outside</label><br>
+    <input type="checkbox" id="surfInternet" name="surfInternet" value= "surfInternet">
+    <label for= "surfInternet">Surf The Internet</label>
+    <input type="checkbox" id="Productivity" name="Productivity" value="Productivity">
+    <label for="Productivity">Productivity</label>
+  <br></br>
+   <br>What do you do at the end of the day??<br>
+    <input type="checkbox" id="eatDinner" name="eatDinner" value= "eatDinner">
+    <label for= "eatDinner">Eat Dinner</label><br>
+    <input type="checkbox" id="shower/bathe" name="shower/bathe" value= "shower/bathe">
+    <label for= "shower/bathe">Have a shower/bath</label>
+    <input type="checkbox" id="sleep" name="sleep" value="sleep">
+    <label for="sleep">Sleep</label>
+  <br></br>
+</form>
+</h3>
+<a href="index2.html">  
+    <h3>
+  <input type="submit" value="Submit">
+  </h3>
+    </a>
+<div id="formContentsHere"></div>
+<script>
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+    event.preventDefault();
+    var name= document.getElementById("name").value;
+   
+    var formContents=document.getElementById("formContents");
+    formContents.innerHTML="Your Name Is" + name;
+</script>
+    </body>
+</html>

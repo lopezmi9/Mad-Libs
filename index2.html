@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Day In The Life of Your Friend: Mad Libs</title>
+<div class= "container">
+<h1 class="neonText4">Day In The Life of Your Friend!</h1>
+<h6 class="neonText3">Give your friend something to do for the day. Create their scenario!</h6>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="style2.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans:wght@600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+    <body>
+<main>
+  <div class="selections-container">
+      <form id="myForm">
+  <label for="name">Type a name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+    </select><br>
+    <br>
+    <div class="container">
+     <label for="verb">Type a verb:</label><br>
+  <input type="text" id="verb" name="verb"><br><br>
+    </select><br>
+    <br>
+    </div>
+    </select>
+      <label for="location">Type a location:</label><br>
+    <input type="text" id="location" name="location"><br><br>
+    <br>
+    <div class="container">
+    <label for="food">Type a food:</label><br>
+  <input type="text" id="food" name="food"><br><br>
+    </select><br>
+    </div>
+      <label for="adjective">Type an adjective:</label><br>
+  <input type="text" id="adjective" name="adjective"><br><br>
+    </select>
+  </div>
+  <br>
+   <input type="submit" value="Submit">
+  </form>
+      <div id="formContentsHere"></div>
+  <br>
+  </main>
+  <a href="index.html">Click here to return to the first page</a>
+<script>
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+    event.preventDefault();
+    var name= document.getElementById("name").value;
+    var verb=document.getElementById("verb").value;
+    var location=document.getElementById("location").value;
+    var food=document.getElementById("food").value;
+    var adjective=document.getElementById("adjective").value;
+   
+    var formContents=document.getElementById("formContentsHere");
+    formContents.innerHTML =  "name " + name + "had" + verb + " to the" + location + "while eating" + food + "it was very" + adjective;
+    }); 
+</script>
+</body>
+</html>
